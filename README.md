@@ -17,30 +17,39 @@ Policies and information live across dozens of department websites, learning man
 
 ## What It Comprises
 
-┌──────────────────────────────────────────────┐
-│              Scope Spaces                    │
-│ Human + AI Collaboration                     │
-└──────────────────────────────────────────────┘
+```mermaid
+flowchart TB
 
-┌──────────────────────────────────────────────┐
-│              Agent Layer                     │
-│ Department Agents • Workflow Agents          │
-└──────────────────────────────────────────────┘
+    subgraph SS["Scope Spaces"]
+        direction TB
+        SS1["Human + AI Collaboration"]
+    end
 
-┌──────────────────────────────────────────────┐
-│         Knowledge & Permission Layer         │
-│ RBAC • Metadata • Escalations • POCs         │
-└──────────────────────────────────────────────┘
+    subgraph AL["Agent Layer"]
+        direction TB
+        AL1["Department Agents • Workflow Agents"]
+    end
 
-┌──────────────────────────────────────────────┐
-│            Retrieval Layer                   │
-│ Search • RAG • Context Assembly              │
-└──────────────────────────────────────────────┘
+    subgraph KP["Knowledge & Permission Layer"]
+        direction TB
+        KP1["RBAC • Metadata • Escalations • POCs"]
+    end
 
-┌──────────────────────────────────────────────┐
-│            Ingestion Layer                   │
-│ Crawlers • PDFs • APIs • LMS • Websites      │
-└──────────────────────────────────────────────┘
+    subgraph RL["Retrieval Layer"]
+        direction TB
+        RL1["Search • RAG • Context Assembly"]
+    end
+
+    subgraph IL["Ingestion Layer"]
+        direction TB
+        IL1["Crawlers • PDFs • APIs • LMS • Websites"]
+    end
+
+    SS --- AL
+    AL --- KP
+    KP --- RL
+    RL --- IL
+```
 
 
 ### Smart Ingestion Pipeline
