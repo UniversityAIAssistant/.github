@@ -17,6 +17,32 @@ Policies and information live across dozens of department websites, learning man
 
 ## What It Comprises
 
+┌──────────────────────────────────────────────┐
+│              Scope Spaces                    │
+│ Human + AI Collaboration                     │
+└──────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────┐
+│              Agent Layer                     │
+│ Department Agents • Workflow Agents          │
+└──────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────┐
+│         Knowledge & Permission Layer         │
+│ RBAC • Metadata • Escalations • POCs         │
+└──────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────┐
+│            Retrieval Layer                   │
+│ Search • RAG • Context Assembly              │
+└──────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────┐
+│            Ingestion Layer                   │
+│ Crawlers • PDFs • APIs • LMS • Websites      │
+└──────────────────────────────────────────────┘
+
+
 ### Smart Ingestion Pipeline
 An ingestion pipeline aware of the key things UniAI optimizes for — **correctness, staleness/freshness, and intelligent automation.** Nobody has to fetch the relevant context; every prompt you type is backed by everything you are in the university context, based on the RBAC system — supported by automated data ingestion from different sources upon changes, which dynamically learns from user interaction — optimized to utilize the **seasonality of information** in a university setting.
 
